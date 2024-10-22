@@ -6,3 +6,4 @@ using a cronjob that lunches
 
 The python script call the Springshare API to get Events details,
 and upload the JSON to Github Pages using PyGithub. 
+Need access token generated from Settings > Developer Settings > Access Tokens. 
