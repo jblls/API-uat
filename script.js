@@ -8,11 +8,28 @@ async function getEvents() {
 
         console.log(eventData);  // Log the event data to verify the content
 
-        displayEvents(eventData); // Display events for today
-        displayImportantEvents(eventData); // Display events for the next 3 days
+        return eventData; // Return the fetched event data
 
     } catch (error) {
         console.error('Error fetching events:', error);
+    }
+}
+
+let lastData = null; // Variable to store the last fetched data
+
+async function checkForUpdates() {
+    const newData = await getEvents(); // Fetch the events data
+
+    // Compare the new data with the last fetched data
+    if (newData && JSON.stringify(newData) !== JSON.stringify(lastData)) {
+        console.log('Data has changed, refreshing the page...');
+        lastData = newData; // Update lastData to the new data
+
+        // Display events only if data has changed
+        displayEvents(newData); // Display events for today
+        displayImportantEvents(newData); // Display events for the next 3 days
+    } else {
+        console.log('No change in data.');
     }
 }
 
@@ -224,11 +241,12 @@ function formatTime(date) {
 
 // Initialize the page and refresh every 10 minutes
 function init() {
-    getEvents();
+    checkForUpdates(); // Fetch the events on initial load
     displayMonthHeader();
     displayWeek();
 
-    setInterval(() => location.reload(), 600000); // Refresh every 10 minutes
+    // Check for updates every 5 minutes (300,000 milliseconds)
+    setInterval(checkForUpdates, 60000); 
 }
 
 init();
