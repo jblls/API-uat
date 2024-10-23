@@ -245,8 +245,8 @@ function init() {
     displayMonthHeader();
     displayWeek();
 
-    // Check for updates every 5 minutes (300,000 milliseconds)
-    setInterval(checkForUpdates, 60000); 
+    // Check for updates every 10 minutes (600,000 milliseconds)
+    setInterval(checkForUpdates, 600000); 
 }
 
 init();
