@@ -287,7 +287,12 @@
         "id": 5505,
         "name": "Law Library"
       },
-      "category": [],
+      "category": [
+        {
+          "id": 44924,
+          "name": "Important"
+        }
+      ],
       "owner": {
         "id": 58243,
         "name": "Stefano Bernardi"
