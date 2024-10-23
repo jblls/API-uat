@@ -81,17 +81,17 @@
       "id": 5737898,
       "title": "Test 1",
       "allday": false,
-      "start": "2024-10-23T11:00:00+11:00",
-      "end": "2024-10-23T12:00:00+11:00",
+      "start": "2024-10-23T13:00:00+11:00",
+      "end": "2024-10-24T12:00:00+11:00",
       "description": "",
       "url": {
         "public": "https://unsw.libcal.com/event/5737898",
         "admin": "https://unsw.libcal.com/aevent.php?c=11369&m=edit&event_id=5737898"
       },
       "location": {
-        "id": 44512,
-        "type": 2,
-        "name": "LDG002"
+        "id": 0,
+        "type": 0,
+        "name": ""
       },
       "campus": {
         "id": 4754,
@@ -135,6 +135,49 @@
         "id": 44512,
         "type": 2,
         "name": "LDG002"
+      },
+      "campus": {
+        "id": 4755,
+        "name": "Paddington Library"
+      },
+      "category": [],
+      "owner": {
+        "id": 58243,
+        "name": "Stefano Bernardi"
+      },
+      "presenter": "",
+      "calendar": {
+        "id": 11369,
+        "name": "Test Calendar - What's On Today",
+        "public": "https://unsw.libcal.com/calendar?cid=11369",
+        "admin": "https://unsw.libcal.com/admin/calendar/11369"
+      },
+      "seats": "",
+      "registration": false,
+      "color": "#B3C8EF",
+      "featured_image": "",
+      "geolocation": null,
+      "future_dates": [],
+      "registration_cost": 0,
+      "more_info": "",
+      "setup_time": 0,
+      "teardown_time": 0
+    },
+    {
+      "id": 5737910,
+      "title": "Test Late 2",
+      "allday": false,
+      "start": "2024-10-23T20:00:00+11:00",
+      "end": "2024-10-23T21:00:00+11:00",
+      "description": "",
+      "url": {
+        "public": "https://unsw.libcal.com/event/5737910",
+        "admin": "https://unsw.libcal.com/aevent.php?c=11369&m=edit&event_id=5737910"
+      },
+      "location": {
+        "id": 0,
+        "type": 0,
+        "name": ""
       },
       "campus": {
         "id": 4755,
